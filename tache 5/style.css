@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+}
+
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://static.vecteezy.com/ti/photos-gratuite/t1/37999169-ai-genere-espace-de-travail-technologie-surligner-le-l-integration-de-la-technologie-dans-le-bureau-contexte-image-generatif-ai-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    padding-top: 50px; 
+}
+.infos {
+    width: 90%; 
+    margin: 5px auto 0 auto;
+    height: 100px;
+    padding: 20px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.infos .col {
+    flex: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.infos .col img {
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
+}
+
+.btn-cv-container {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.btn-cv {
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: darkorange;
+}
+
+
+.profile-card-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre la card */
+    margin-top: -200px; /* remonte la card pour chevaucher la section au-dessus */
+    position: relative;
+    z-index: 1; /* s'assure que la card reste au-dessus */
+}
+.profile-card {
+    width: 800px; 
+    height: 500px;
+    background-color: white;
+    padding: 60px 20px 30px 20px; /* plus de padding en haut pour l'image qui dépasse */
+    text-align: center;
+    position: relative;
+    z-index: 2; /* au-dessus de la section orange */
+}
+
+.profile-card .profile-img {
+    width: 200px; /* image plus grande */
+    height: 200px;
+    border-radius: 50%; /* complètement ronde */
+    object-fit: cover;
+    position: absolute;
+    top: -75px; /* moitié de la hauteur pour la centrer sur le bord de la card */
+    left: 50%;
+    transform: translateX(-50%); /* centre horizontalement */
+    border: 4px solid white; /* petit contour blanc autour de l'image */
+    background-color: white; /* pour éviter transparence autour */
+}
+
+
+.profile-card h2 {
+    margin-top: 100px; /* espace pour l'image */
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-card .role {
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.profile-card p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc; /* gris de base */
+    border-radius: 50%;      /* cercle */
+    transition: all 0.3s ease;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* icône blanche */
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: orange; /* bg orange au hover */
+}
+
+.social-icons a:hover img {
+    filter: brightness(1) invert(0); /* icône devient orange/blanc selon ton design */
+}
+
