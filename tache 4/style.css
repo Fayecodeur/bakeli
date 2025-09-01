@@ -290,7 +290,7 @@ li a{
       background: #fff;
       display: flex;
       flex-direction: column;
-      height: 350px; /* agrandit la carte */
+      height: 350px;
     }
 
     .team-card .avatar {
@@ -322,4 +322,29 @@ li a{
       font-size: 18px;
       color: #333;
     }
+ 
+       section.logo-section {
+      text-align: center;
+      padding: 80px 20px; 
+    }
 
+    section.logo-section img {
+      max-width: 100px;
+      margin-bottom: 50px; 
+    }
+
+    section.logo-section p {
+      font-size: 18px;
+      color: #444;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-bottom: 40px; 
+    }
+
+    section.logo-section strong {
+      font-size: 15px;
+      font-weight: bold;
+      display: block;
+      margin-top: 20px;
+      color: #222;
+    }
