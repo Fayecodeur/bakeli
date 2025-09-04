@@ -14,7 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url('https://static.vecteezy.com/ti/photos-gratuite/t1/37999169-ai-genere-espace-de-travail-technologie-surligner-le-l-integration-de-la-technologie-dans-le-bureau-contexte-image-generatif-ai-photo.jpg');
+    background-image: url('bureau.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -71,13 +71,13 @@ html, body {
 .profile-card-section {
     width: 100%;
     display: flex;
-    justify-content: center; /* centre la card */
-    margin-top: -200px; /* remonte la card pour chevaucher la section au-dessus */
+    justify-content: center;
+    margin-top: -280px; /* remonte la card pour chevaucher la section au-dessus */
     position: relative;
     z-index: 1; /* s'assure que la card reste au-dessus */
 }
 .profile-card {
-    width: 800px; 
+    width: 750px; 
     height: 500px;
     background-color: white;
     padding: 60px 20px 30px 20px; /* plus de padding en haut pour l'image qui dépasse */
@@ -95,8 +95,8 @@ html, body {
     top: -75px; /* moitié de la hauteur pour la centrer sur le bord de la card */
     left: 50%;
     transform: translateX(-50%); /* centre horizontalement */
-    border: 4px solid white; /* petit contour blanc autour de l'image */
-    background-color: white; /* pour éviter transparence autour */
+    border: 4px solid white; 
+    background-color: white; 
 }
 
 
@@ -151,4 +151,169 @@ html, body {
 .social-icons a:hover img {
     filter: brightness(1) invert(0); /* icône devient orange/blanc selon ton design */
 }
+
+  .portfolio {
+      width: 100%;
+      padding: 60px 10%;
+    }
+
+    /* Titre principal */
+    .portfolio h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    /* Ligne titre secondaire + filtres */
+    .portfolio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-header h3 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .filters {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .filters span {
+      cursor: pointer;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .filters span.active {
+      color: orange;
+    }
+
+    .filters span.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background: orange;
+    }
+
+    /* Grille */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      height: 250px;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .about {
+  display: flex;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.about-left {
+  flex: 0 0 30%;
+}
+
+.about-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-left h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cercle */
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(
+    orange var(--percent),
+    #ddd var(--percent)
+  );
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.circle span {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.circle-label {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
 

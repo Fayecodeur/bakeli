@@ -57,8 +57,125 @@
                 <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/808080/github.png" alt="GitHub"></a>
             </div>
         </div>
-
     </section>
+
+    <!-- Section Portfolio -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio-header">
+            <h3>My Work</h3>
+            <div class="filters">
+                <span class="filter active" data-filter="all">ALL</span>
+                <span class="filter" data-filter="web">WEB DESIGN</span>
+                <span class="filter" data-filter="branding">BRANDING</span>
+                <span class="filter" data-filter="graphic">GRAPHIC DESIGN</span>
+            </div>
+        </div>
+
+        <!-- Grille d'images -->
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="Web Design">
+            </div>
+            <div class="portfolio-item" data-category="branding">
+                <img src="https://images.pexels.com/photos/1034649/pexels-photo-1034649.jpeg" alt="Branding">
+            </div>
+            <div class="portfolio-item" data-category="graphic">
+                <img src="https://images.pexels.com/photos/3747266/pexels-photo-3747266.jpeg" alt="Graphic Design">
+            </div>
+            <div class="portfolio-item" data-category="web">
+                <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg" alt="Web Design">
+            </div>
+            <div class="portfolio-item" data-category="branding">
+                <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Branding">
+            </div>
+            <div class="portfolio-item" data-category="graphic">
+                <img src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg" alt="Graphic Design">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About Me -->
+    <section class="about">
+        <!-- Colonne gauche -->
+        <div class="about-left">
+            <h2>About Me</h2>
+            <h3>Professional Path</h3>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="about-right">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur labore culpa excepturi commodi
+                adipisci, obcaecati nobis alias dolorum ducimus non laborum aliquam maxime autem quia voluptate quod
+                fugit nisi exercitationem quas rem suscipit fuga odio. Facilis perferendis voluptatum ipsum repellat
+                doloremque amet odio doloribus impedit atque laborum quia inventore, exercitationem aliquam enim in
+                suscipit mollitia rerum unde blanditiis sit fuga nemo? Consectetur, nesciunt facere aliquam asperiores
+                ipsa expedita dolorum quasi illum doloribus voluptate non delectus voluptatem, eaque repellat quos harum
+                possimus beatae eius nobis veniam laudantium enim odit illo. Facere aliquid illo eum ullam a, saepe aut!
+                Praesentium, ex error!
+            </p>
+
+            <div class="skills">
+                <div class="skill">
+                    <div class="circle" style="--percent: 97%;">
+                        <span>97%</span>
+                    </div>
+                    <div class="circle-label">HTML / CSS</div>
+                </div>
+
+                <div class="skill">
+                    <div class="circle" style="--percent: 85%;">
+                        <span>85%</span>
+                    </div>
+                    <div class="circle-label">PHP</div>
+                </div>
+
+                <div class="skill">
+                    <div class="circle" style="--percent: 75%;">
+                        <span>75%</span>
+                    </div>
+                    <div class="circle-label">Java</div>
+                </div>
+
+                <div class="skill">
+                    <div class="circle" style="--percent: 80%;">
+                        <span>80%</span>
+                    </div>
+                    <div class="circle-label">Python</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- JS Filtre -->
+    <script>
+        const filters = document.querySelectorAll(".filter");
+        const items = document.querySelectorAll(".portfolio-item");
+
+        filters.forEach(filter => {
+            filter.addEventListener("click", () => {
+                // Retirer "active" sur tous
+                filters.forEach(f => f.classList.remove("active"));
+                // Ajouter "active" au clic
+                filter.classList.add("active");
+
+                const category = filter.getAttribute("data-filter");
+
+                items.forEach(item => {
+                    if (category === "all" || item.getAttribute("data-category") === category) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
 
 </body>
 
