@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: poppins, sans-serif;
 }
-label{
-    display: none;
-}
-
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
@@ -30,7 +26,6 @@ form {
     display: flex;
     flex-direction: row;
     gap: 50px;
-
 }
 
 .left {
