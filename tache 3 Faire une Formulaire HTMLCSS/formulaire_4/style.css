@@ -6,7 +6,6 @@
 }
 
 body {
-    background: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,7 @@ form {
 }
 
 .left {
-    width: 30%;
+    width: 40%;
 }
 
 .left img {
@@ -34,7 +33,7 @@ form {
 }
 
 .right {
-    width: 70%;
+    width: 80%;
     padding: 30px;
 }
 
@@ -78,14 +77,13 @@ h1 {
     border-color: #28a745;
 }
 
-/* Radio buttons vert */
 .radio-group {
     display: flex;
     gap: 15px;
 }
 
 .radio-group input[type="radio"] {
-    accent-color: #28a745; /* couleur verte au clique */
+    accent-color: #28a745;
 }
 
 .radio-group label {
@@ -94,7 +92,6 @@ h1 {
     font-size: 12px;
 }
 
-/* Range custom */
 .range-container {
     display: flex;
     align-items: center;
@@ -103,7 +100,7 @@ h1 {
 
 input[type="range"] {
     flex: 1;
-    accent-color: #28a745; /* barre verte */
+    accent-color: #28a745; 
     cursor: pointer;
 }
 
