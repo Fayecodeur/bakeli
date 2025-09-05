@@ -386,4 +386,63 @@ html, body {
   margin-bottom: 8px;
 }
 
+/* ====== Education ====== */
+.education{
+  display:flex; gap:40px; padding:60px 10%; background:#fff; color:#333;
+}
+.edu-left{ flex:0 0 30%; }
+.edu-left h2{ font-size:32px; margin-bottom:8px; }
+.edu-left h3{ font-size:14px; letter-spacing:2px; color:#777; text-transform:uppercase; }
+
+.edu-right{ flex:1; }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 70px; /* espace pour la ligne + point */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;          /* position du trait vertical */
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* Point orange bien centré sur la ligne */
+.content h4 {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.content h4::before {
+  content: "";
+  position: absolute;
+  left: -45px;              /* (70 padding - 25 ligne) = 45 */
+  top: 0.5em;               /* alignement vertical sur le texte */
+  transform: translate(-50%, -50%);
+  width: 20px;              /* point plus gros */
+  height: 20px;
+  background: orange;
+  border-radius: 50%;
+  border: 4px solid #ffb84d; /* bordure orange clair */
+  z-index: 2;
+}
+
+
+.content h5{ font-size:16px; color:orange; margin:0 0 6px; }
+.content .date{ display:block; font-size:14px; color:#777; margin-bottom:12px; }
+.content .desc{ color:#777; line-height:1.6; }
+
+
 
