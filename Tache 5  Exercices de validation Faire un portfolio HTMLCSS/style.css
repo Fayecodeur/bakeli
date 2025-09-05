@@ -152,6 +152,16 @@ html, body {
     filter: brightness(1) invert(0); /* icône devient orange/blanc selon ton design */
 }
 
+/* Petit séparateur orange avant le titre */
+.section-divider {
+    width: 50px;          /* largeur du trait */
+    height: 10px;          /* épaisseur */
+    background-color: orange;
+    border-radius: 25px;
+    margin-bottom: 15px;  /* espace sous le trait */
+}
+
+
   .portfolio {
       width: 100%;
       padding: 60px 10%;
@@ -159,7 +169,7 @@ html, body {
 
     /* Titre principal */
     .portfolio h2 {
-      font-size: 36px;
+      font-size: 26px;
       font-weight: bold;
       margin-bottom: 20px;
       text-align: left;
@@ -170,20 +180,23 @@ html, body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       flex-wrap: wrap;
     }
 
     .portfolio-header h3 {
-      font-size: 20px;
-      font-weight: 600;
-      text-transform: uppercase;
+     font-size: 18px;
+    font-weight: 500;
+     color: gray;
+    text-transform: uppercase;
     }
 
     .filters {
       display: flex;
       gap: 20px;
       justify-content: center;
+      text-align: center;
+
     }
 
     .filters span {
@@ -191,6 +204,7 @@ html, body {
       font-weight: 500;
       position: relative;
       transition: color 0.3s ease;
+      color: gray;
     }
 
     .filters span.active {
