@@ -19,10 +19,10 @@ html, body {
     background-position: center;
     color: white;
     width: 100%;
-    padding-top: 50px; 
+    padding-top: 30px; 
 }
 .infos {
-    width: 90%; 
+    width: 80%; 
     margin: 5px auto 0 auto;
     height: 100px;
     padding: 20px;
@@ -72,15 +72,15 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -280px; /* remonte la card pour chevaucher la section au-dessus */
+    margin-top: -280px; 
     position: relative;
-    z-index: 1; /* s'assure que la card reste au-dessus */
+    z-index: 1;
 }
 .profile-card {
     width: 750px; 
     height: 500px;
     background-color: white;
-    padding: 60px 20px 30px 20px; /* plus de padding en haut pour l'image qui dépasse */
+    padding: 60px 20px 30px 20px; 
     text-align: center;
     position: relative;
     z-index: 2; /* au-dessus de la section orange */
@@ -89,21 +89,21 @@ html, body {
 .profile-card .profile-img {
     width: 200px; /* image plus grande */
     height: 200px;
-    border-radius: 50%; /* complètement ronde */
+    border-radius: 50%; 
     object-fit: cover;
     position: absolute;
     top: -75px;
     object-fit: cover;         
     object-position: 10% center; 
     left: 50%;
-    transform: translateX(-50%); /* centre horizontalement */
+    transform: translateX(-50%);
     border: 4px solid white; 
     background-color: white; 
 }
 
 
 .profile-card h2 {
-    margin-top: 100px; /* espace pour l'image */
+    margin-top: 100px; 
     font-size: 28px;
     color: #333;
 }
@@ -134,33 +134,33 @@ html, body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #ccc; /* gris de base */
-    border-radius: 50%;      /* cercle */
+    background-color: #ccc; 
+    border-radius: 50%;      
     transition: all 0.3s ease;
 }
 
 .social-icons a img {
     width: 20px;
     height: 20px;
-    filter: brightness(0) invert(1); /* icône blanche */
+    filter: brightness(0) invert(1); 
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    background-color: orange; /* bg orange au hover */
+    background-color: orange;
 }
 
 .social-icons a:hover img {
-    filter: brightness(1) invert(0); /* icône devient orange/blanc selon ton design */
+    filter: brightness(1) invert(0);
 }
 
 /* Petit séparateur orange avant le titre */
 .section-divider {
-    width: 50px;          /* largeur du trait */
-    height: 10px;          /* épaisseur */
+    width: 50px;        
+    height: 10px;          
     background-color: orange;
     border-radius: 25px;
-    margin-bottom: 15px;  /* espace sous le trait */
+    margin-bottom: 15px;  
 }
 
 
