@@ -136,6 +136,7 @@ label{
   user-select: none;
   pointer-events: none;
 }
+
 .dinning-space {
     display: flex;
     flex-direction: column;
@@ -145,8 +146,8 @@ label{
 
 .dinning-space .radio-title {
     display: block;
-    color: #ffffffce;
-    font-size: 15px;
+    color: #ffffffdc;
+    font-size: 14px;
     margin-bottom: 8px;
     text-align: left; 
     width: 100%;
@@ -160,25 +161,46 @@ label{
 }
 
 .radio-group label {
-    display: inline-block;
+    display: flex;           /* cercle et texte sur la même ligne */
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
 }
 
+/* cacher l’input radio */
 .radio-group input[type="radio"] {
     display: none;
 }
 
-.radio-group span {
+/* cercle */
+.radio-circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;   /* réduit un peu la taille */
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     background: #fff;
     color: #634a37;
     font-weight: bold;
     border: 2px solid #634a37;
-    transition: 0.3s;
     font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* texte Person caché par défaut */
+.radio-text {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* effet quand radio coché */
+.radio-group input[type="radio"]:checked + .radio-circle {
+    background: #634a37;
+    color: #fff;
+}
+
+.radio-group input[type="radio"]:checked + .radio-circle + .radio-text {
+    display: inline-block;
 }
