@@ -137,6 +137,7 @@ label{
   pointer-events: none;
 }
 
+
 .dinning-space {
     display: flex;
     flex-direction: column;
@@ -160,15 +161,19 @@ label{
     width: 100%;
 }
 
-.radio-group label {
-    display: flex;           /* cercle et texte sur la même ligne */
+.radio-option {
+    display: flex;
     align-items: center;
     gap: 8px;
+    padding: 6px 14px;
+    border-radius: 30px;       /* forme ovale */
+    background: transparent;    
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 /* cacher l’input radio */
-.radio-group input[type="radio"] {
+.radio-option input[type="radio"] {
     display: none;
 }
 
@@ -177,12 +182,12 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background: #fff;
+    background: #fff;           
     color: #634a37;
-    font-weight: bold;
+    font-weight: bolder;
     border: 2px solid #634a37;
     font-size: 14px;
     transition: background 0.3s, color 0.3s;
@@ -191,16 +196,25 @@ label{
 /* texte Person caché par défaut */
 .radio-text {
     display: none;
-    color: #fff;
+    color: #634a37;           
+    font-weight: bolder;
     font-size: 14px;
 }
 
-/* effet quand radio coché */
-.radio-group input[type="radio"]:checked + .radio-circle {
-    background: #634a37;
+/* Fond ovale marron clair sur le label sélectionné */
+.radio-group label:has(input[type="radio"]:checked) {
+    background: #d1a97e;  
+}
+
+/* Cercle marron foncé au clic */
+.radio-option input[type="radio"]:checked + .radio-circle {
+    background: #634a37;        
     color: #fff;
 }
 
-.radio-group input[type="radio"]:checked + .radio-circle + .radio-text {
+/* Afficher le texte Person en marron foncé */
+.radio-option input[type="radio"]:checked ~ .radio-text {
     display: inline-block;
+    color: #634a37;
+    font-weight: 600;
 }
