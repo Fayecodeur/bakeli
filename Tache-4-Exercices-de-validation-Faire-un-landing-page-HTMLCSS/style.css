@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+
 }
 nav{
     height: 100px;
@@ -26,6 +27,8 @@ li a{
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
+
 
 .hero{
     height:90vh;
@@ -394,6 +397,24 @@ li a{
 
 /* Mobile */
 @media (max-width: 480px) {
+  nav{
+    height: auto;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.1);
+    padding: 10px 0;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+li a{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
     .hero {
         font-size: 28px;
         padding: 10px;
@@ -495,7 +516,6 @@ li a{
         max-width: 50%;
         max-height: 50%;
     }
-    
 
     /* Team section */
       section.team {
