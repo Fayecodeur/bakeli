@@ -186,9 +186,12 @@ nav ul li a:hover {
     font-size: 16px;
     color: #666;
 }
-
 /* Responsive < 768px */
 @media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -204,7 +207,7 @@ nav ul li a:hover {
 
     /* Accueil */
     #accueil {
-        padding: 70px 0;
+        padding: 70px 0 20px;
     }
 
     #accueil .container {
@@ -222,16 +225,34 @@ nav ul li a:hover {
     }
 
     #accueil h1 {
-        font-size: 20px;
+        font-size: 24px; /* titre accueil plus lisible */
     }
 
     #accueil p {
-        font-size: 14px;   
+        font-size: 16px;   
         margin-bottom: 15px;
     }
 
-    /* Cours */
+    /* Section Cours */
+    #cours {
+        padding-top: 40px; /* remonte la section */
+    }
+
+    #cours h2 {
+        font-size: 22px; /* titre section cours */
+    }
+
+    #cours .description,
+    #cours .card p {
+        font-size: 15px; /* paragraphes légèrement plus petits */
+    }
+
+    #cours .card h3 {
+        font-size: 18px; /* titre des cartes */
+    }
+
     #cours .cards {
         flex-direction: column;
+        gap: 15px;
     }
 }
