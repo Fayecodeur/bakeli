@@ -170,7 +170,7 @@ nav ul li a:hover {
 #cours .card {
     flex: 1;
     padding: 10px 15px;
-    background: #f9f9f9;
+    background: #ffffff;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 15px;
 }
@@ -186,6 +186,57 @@ nav ul li a:hover {
     font-size: 16px;
     color: #666;
 }
+
+/* Planning Section */
+
+#planning {
+    padding: 40px 0;
+}
+
+#planning .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#planning h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+#planning .description {
+    font-size: 16px;
+    color: #4e4c4c;
+    margin-bottom: 10px;
+}
+
+#planning table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#planning thead {
+    background: #f0efeff1;
+}
+
+#planning th,
+#planning td {
+    padding: 12px 15px;
+    text-align: left;
+      border-bottom: 1px solid #ccc;
+}
+
+#planning tbody tr {
+    background: #ffffff;
+}
+
+#planning th {
+    font-weight: bold;
+}
+
 /* Responsive < 768px */
 @media (max-width: 768px) {
     .container {
@@ -248,11 +299,19 @@ nav ul li a:hover {
     }
 
     #cours .card h3 {
-        font-size: 18px; /* titre des cartes */
+        font-size: 18px; 
     }
 
     #cours .cards {
         flex-direction: column;
         gap: 15px;
     }
+
+    /* Section Planning */
+    s#planning th,
+    #planning td {
+        font-size: 14px; 
+    }
+
+   
 }
