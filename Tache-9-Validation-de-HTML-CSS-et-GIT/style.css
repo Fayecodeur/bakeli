@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -142,7 +144,7 @@ nav ul li a:hover {
 
 /* Section Cours */
 #cours {
-    padding: 40px 0 40px;
+    padding: 50px 0 40px;
 }
 
 #cours .container {
@@ -169,10 +171,11 @@ nav ul li a:hover {
 
 #cours .card {
     flex: 1;
-    padding: 10px 15px;
+    padding: 12px 15px;
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #cours .card h3 {
@@ -190,7 +193,7 @@ nav ul li a:hover {
 /* Planning Section */
 
 #planning {
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 #planning .container {
@@ -259,6 +262,74 @@ nav ul li a:hover {
     height: 180px; 
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* contact section */
+#contact {
+    padding: 50px 0 100px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+#contact .description {
+    font-size: 15px;
+    color: #4e4c4c;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact label {
+    font-weight: bold;
+    margin-bottom: 3px; 
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 12px; 
+}
+
+#contact button {
+    padding: 10px 20px;
+    background: #0a7cff; 
+    color: white;
+    border: 2px solid black; 
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #0056d2; 
+}
+
+/* Footer Section */
+footer {
+    border-top: 1px solid #dfd9d9;
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -347,5 +418,17 @@ nav ul li a:hover {
         height: 150px;
     }
 
-   
+    /* Footer */
+    footer {
+        padding: 20px 10px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
