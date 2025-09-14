@@ -54,6 +54,13 @@ nav .box {
     margin-right: 10px;
     border-radius: 8px; 
 }
+nav .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;       
+}
+
 
 nav .logo h6 {
     font-size: 16px;
@@ -81,6 +88,10 @@ nav ul li a {
 
 nav ul li a:hover {
     background: whitesmoke;
+}
+
+section {
+  scroll-margin-top: 30px; 
 }
 
 /* Accueil Section */
@@ -268,6 +279,8 @@ nav ul li a:hover {
 #contact {
     padding: 50px 0 100px;
 }
+
+
 
 #contact h2 {
     font-size: 24px;
