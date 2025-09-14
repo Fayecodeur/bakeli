@@ -237,6 +237,31 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+/* Galerie */
+#galerie {
+    padding: 50px 0;
+}
+
+#galerie h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#galerie .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+#galerie .gallery img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
 /* Responsive < 768px */
 @media (max-width: 768px) {
     .container {
@@ -290,12 +315,12 @@ nav ul li a:hover {
     }
 
     #cours h2 {
-        font-size: 22px; /* titre section cours */
+        font-size: 22px;
     }
 
     #cours .description,
     #cours .card p {
-        font-size: 15px; /* paragraphes légèrement plus petits */
+        font-size: 15px; 
     }
 
     #cours .card h3 {
@@ -311,6 +336,15 @@ nav ul li a:hover {
     s#planning th,
     #planning td {
         font-size: 14px; 
+    }
+
+    /* Galerie */
+       #galerie .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    #galerie .gallery img {
+        height: 150px;
     }
 
    
