@@ -120,6 +120,44 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="description">N'hésitez pas à nous écrire :</p>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" placeholder="Votre nom" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="vous@exemple.com" name="email" required>
+
+                <label for="subject">Sujet :</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Choisissez un sujet</option>
+                    <option value="general">Inscription</option>
+                    <option value="course">Informations</option>
+                    <option value="other">Autre</option>
+                </select>
+
+                <label for="message">Message :</label>
+                <textarea id="message" placeholder="Votre message..." name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Académie Teranga. Tous droits réservés..</p>
+                <p>Exercice HTML & CSS – Niveau débutant</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
