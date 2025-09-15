@@ -368,7 +368,7 @@ footer {
 
     /* Accueil */
     #accueil {
-        padding: 70px 0 20px;
+        padding: 70px 0 10px;
     }
 
     #accueil .container {
@@ -444,7 +444,9 @@ footer {
     }
     #contact form {
         padding: 15px;
+        gap: 6px;
     }
+  
 
     /* Footer */
     footer {
