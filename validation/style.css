@@ -47,12 +47,43 @@
 
 /* ====== Navbar ====== */
 
-
-
+/* Style de base des liens nav */
 .navbar-nav .nav-link {
-  color: #333 !important;
+  position: relative;
+  color: #333 !important; /* couleur par défaut */
+  transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-  color: var(--orange) !important;
+/* Soulignement animé au hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px; 
+  width: 0;
+  height: 3px;
+  background-color: var(--orange); 
+  transition: width 0.3s ease;
 }
+
+/* Effet hover : underline apparaît */
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Effet hover : texte reste normal */
+.navbar-nav .nav-link:hover {
+  color: #333 !important; 
+}
+
+/* Quand le lien est actif (cliqué) */
+.navbar-nav .nav-link.active {
+  color: #ff9800 !important; /* orange clair */
+  font-weight: 600;
+}
+
+/* Pas d'underline sur le lien actif */
+.navbar-nav .nav-link.active::after {
+  width: 0;
+}
+
