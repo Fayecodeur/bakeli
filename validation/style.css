@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ====== Déclaration des couleurs globales ====== */
+:root {
+  --orange: #ff9800;
+  --orange-dark: #e68900;
+
+  --primary: #1976d2;
+  --primary-dark: #125a9c;
+}
+
+/* ====== Container personnalisé ====== */
+.container {
+  max-width: 1300px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* ====== Bouton Warning ====== */
+.btn-warning {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+  color: #fff !important;
+}
+
+.btn-warning:hover {
+  background-color: var(--orange-dark) !important;
+  border-color: var(--orange-dark) !important;
+}
+
+/* ====== Bouton Primary ====== */
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+/* ====== Navbar ====== */
+
+
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--orange) !important;
+}
