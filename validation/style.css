@@ -102,7 +102,6 @@
 
 /* Hero section */
 .offre {
-
     display: flex;
     align-items: center;     
     justify-content: center;
@@ -207,4 +206,29 @@
     font-size: 14px;
     color: #333;
     font-weight: 600;
+}
+
+
+/* Statistiques section */
+.statistique-item {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+}
+
+.statistiques .frais h2 {
+      font-size: 30px;
+     font-weight: 700;
+}
+
+.statistiques .frais h2 {
+    color: var(--orange-dark);
+} 
+.statistiques .bourses h2 {
+   color: blue;
+}
+
+/* Formations */
+.formations {
+    background-color: #f9f9f9;
 }
