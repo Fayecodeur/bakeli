@@ -21,6 +21,7 @@
   padding-right: 10px !important;
 }
 
+
 /* ====== Bouton Warning ====== */
 .btn-warning {
   background-color: var(--orange) !important;
@@ -125,3 +126,85 @@
   font-weight: 600;
 }
 
+.hero-image {
+  width: 100%;     
+  max-width: 400px; 
+  margin: 0 auto;   
+  position: relative;
+}
+
+.hero-image img {
+  border: 30px solid #ffffff;
+  border-radius: 20px;        
+  width: 100%;          
+  display: block;             
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Mobile : pleine largeur */
+@media (max-width: 767.98px) {
+  .hero-image {
+    max-width: 100%;   /
+  }
+}
+
+
+
+
+
+/* Style commun aux icônes */
+.hero-image .icon {
+    position: absolute;
+    font-size: 19px;                      
+    border-radius: 50%;         
+    padding: 7px;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.15); */
+}
+
+/* Position spécifique */
+.hero-image .code {
+    top: 1px;
+    right: -1px;
+    background: var(--orange);
+    color: white;
+    font-weight: 600;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.hero-image .magic {
+    bottom: 2px;
+    left: 1px;
+    background: #00c48c;
+    color: white;
+    font-weight: 600;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: white;
+    padding: 5px 12px;  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.point-vert {
+    width: 10px;
+    height: 10px;
+    background-color: #00c48c;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.statistique {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
