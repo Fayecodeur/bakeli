@@ -9,7 +9,10 @@
 :root {
   --orange: #ff9800;
   --orange-dark: #e68900;
-
+  --orange-light: #ffedd5;
+  --vert: #109183;
+  --warning:var(--orange);
+    
   --primary: #1976d2;
   --primary-dark: #125a9c;
 }
@@ -231,4 +234,31 @@
 /* Formations */
 .formations {
     background-color: #f9f9f9;
+}
+
+.etudiant_formes {
+  display: inline-block; /* pour que le background épouse juste le texte */
+  background: linear-gradient(to right, #d54e41, #109183); /* dégradé rouge → vert */
+  color: white; /* texte lisible */
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px 25px;
+  border-radius: 25px; 
+}
+.formations a {
+  display: inline-block;      
+  color: var(--orange-dark);    
+  text-decoration: none;       
+  font-weight: 700;             
+  background-color: var(--orange-light); 
+  color: var(--orange-dark);
+  padding: 9px 15px;            
+  border-radius: 20px; 
+  width: 130px;         
+  font-size: 14px;             
+}
+
+.formations a:hover {
+  color: white;
+  background: var(--orange-dark);            
 }
