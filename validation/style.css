@@ -289,3 +289,69 @@
   background-color: #ffc2c2;
   color: #e75555 ;
 }
+
+/* Evenement */
+.evenement{
+  background-color: #f3f4f6;
+}
+.evenement .row {
+    display: flex;              
+    flex-wrap: wrap;             
+    justify-content: space-between; 
+    gap: 1rem;                   
+}
+
+.evenement .col-md-3 {
+    flex: 0 0 24%; 
+    max-width: 24%;
+}
+
+.evenement .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;  
+}
+
+.evenement .card-img-top {
+    width: 100%;
+    height: 160px;      
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+}
+
+.evenement .card-body {
+    flex: 1;             
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.evenement .badge {
+    z-index: 10;
+}
+
+/* Responsive pour tablette et mobile */
+@media (max-width: 768px) {
+    .evenement .col-md-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .evenement .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .evenement .row {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .evenement .card {
+        margin-bottom: 1rem; 
+    }
+}
