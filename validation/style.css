@@ -23,7 +23,12 @@
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
-
+.text-orange{
+  color: var(--orange-dark);
+}
+.bg-orange-light{
+  background-color: var(--orange-light);
+}
 
 /* ====== Bouton Warning ====== */
 .btn-warning {
@@ -261,4 +266,26 @@
 .formations a:hover {
   color: white;
   background: var(--orange-dark);            
+}
+
+.custom-card i{
+  padding: 15px;
+}
+.custom-card-annee i{
+  background-color: var(--orange-light);
+}
+
+.custom-card-etudiants i{
+  background-color: #e5f0fa;
+}
+
+.custom-card-coach i{
+  background-color: #ecfef1;
+  color: #7af89e;
+  font-size: 18px;
+}
+
+.custom-card-reussite i{
+  background-color: #ffc2c2;
+  color: #e75555 ;
 }
