@@ -75,6 +75,8 @@
   transition: color 0.3s ease;
 }
 
+
+
 /* Soulignement animé au hover */
 .navbar-nav .nav-link::after {
   content: "";
@@ -107,6 +109,21 @@
 .navbar-nav .nav-link.active::after {
   width: 0;
 }
+@media (max-width: 768px) {
+    /* Supprimer l'underline animé sur mobile */
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+
+    /* Les liens ne prennent plus toute la largeur */
+    .navbar-nav .nav-link {
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+}
+
 
 /* Hero section */
 .offre {
