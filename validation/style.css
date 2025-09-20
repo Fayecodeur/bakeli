@@ -319,6 +319,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* arrondi si tu veux un look plus doux */
+  overflow: hidden; /* pour éviter que l'image dépasse */
 }
 
 .evenement .card-img-top {
@@ -326,6 +329,20 @@
     height: 180px;      
     object-fit: cover; 
     transition: transform 0.5s ease; 
+}
+
+
+.evenement .card img {
+  transition: transform 0.3s ease;
+}
+
+.evenement .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.evenement .card:hover img {
+  transform: scale(1.05); 
 }
 
 
