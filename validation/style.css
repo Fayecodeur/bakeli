@@ -350,3 +350,14 @@
   background-color: #f8fafc;
 }
 
+.cta{
+  background: linear-gradient(to right, #be0735, #da1243);
+}
+
+.cta_btn{
+  background-color: white;
+  color: #be0735;
+  font-weight: 600;
+  padding: 15px 20px;
+  border: none;
+}
