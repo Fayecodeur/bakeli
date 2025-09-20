@@ -345,6 +345,8 @@
   transform: scale(1.05); 
 }
 
-
-
+/* Temoignages */
+.temoignages{
+  background-color: #f8fafc;
+}
 
