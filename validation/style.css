@@ -140,6 +140,10 @@
     border-radius: 30px; 
 }
 
+body{
+    padding-top: 60px;
+}
+
 #acceuil p.description{
     font-size: 16px;
     margin-top: 20px;
@@ -414,4 +418,74 @@ footer input{
 }
 footer input:focus{
   border-color: #00c48c;
+}
+
+/* Cartes */
+#carouselTemoignages .card {
+    width: 22rem;
+    margin: 0 auto;
+}
+
+/* Boutons du carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: white; 
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet survol */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #f0f0f0;
+}
+
+/* Décalage pour ne pas coller aux cartes (PC) */
+@media (min-width: 769px) {
+    .carousel-control-prev {
+        left: -30px;
+    }
+    .carousel-control-next {
+        right: -30px;
+    }
+}
+
+/* Décalage pour mobiles */
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -10px;
+    }
+    .carousel-control-next {
+        right: -10px;
+    }
+    #carouselTemoignages .card {
+        width: 18rem; 
+    }
+}
+
+/* Flèches gris simples */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(-135deg); /
+}
+
+.carousel-control-next-icon {
+    transform: rotate(45deg);
 }
