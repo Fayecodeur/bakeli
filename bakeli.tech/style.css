@@ -10,9 +10,9 @@
   --orange: #ff9800;
   --orange-dark: #e68900;
   --orange-light: #ffedd5;
-  --vert: #109183;
+  --green: #109183;
   --warning:var(--orange);
-    
+    --color-warning:var(var(--orange))
   --primary: #1976d2;
   --primary-dark: #125a9c;
 }
@@ -141,7 +141,7 @@
 }
 
 body{
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 #acceuil p.description{
@@ -287,6 +287,11 @@ body{
 .formations a:hover {
   color: white;
   background: var(--orange-dark);            
+}
+
+.icon-wrapper{
+  height: 55px;
+  width: 55px;
 }
 
 .custom-card i{
