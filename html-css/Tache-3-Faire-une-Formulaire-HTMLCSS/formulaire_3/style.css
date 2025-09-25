@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #634a37;
+}
+
+
+form {
+    display: flex;
+    width: 100%;         
+    max-width: 850px;   
+    height: 580px;    
+    border-radius: 5px;
+    overflow: hidden;    
+}
+
+.left {
+    width: 50%;          
+    height: 100%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.right {
+    width: 50%;       
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #221919;
+    padding: 20px;
+}
+
+.right h1 {
+    margin-bottom: 16px;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    font-weight: semi-bold;
+}
+.right p{
+  margin-top: 5px;
+  font-size: 14px;
+  color: #d1a97e;
+}
+/* Inputs et selects légèrement réduits */
+.right input,
+.right select {
+    width: calc(100% - 20px); /* moins large pour avoir un petit padding des bords */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.right button {
+    padding: 12px 15px;
+    border: none;
+    background: #d1a97e;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.right button:hover {
+    background: #836650d0;
+    transition: 0.3s;
+}
+
+label{
+  display: none; 
+}
+
+/* Ligne label + champ */
+.right .form-group{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Inputs, selects, textarea et “champ statique” (pour Prix) */
+.right input,
+.right select,
+.right textarea,
+.right .static-field{
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #fff;  
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-bottom-width .2s;
+}
+
+.right input:focus,
+.right select:focus,
+.right textarea:focus{
+  border-bottom-width: 2px;       
+}
+
+/* Placeholders et select “placeholder” */
+.right input::placeholder,
+.right textarea::placeholder{ color: rgba(255,255,255,.7); }
+
+.right select:invalid{ color: rgba(255,255,255,.7); }
+.right select option{ color: #000; }   /* options visibles dans la liste */
+
+/* “Champ” non éditable pour afficher Prix */
+.right .static-field{
+  user-select: none;
+  pointer-events: none;
+}
+
+
+.dinning-space {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;             
+}
+
+.dinning-space .radio-title {
+    display: block;
+    color: #ffffffdc;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: left; 
+    width: 100%;
+}
+
+.radio-group {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 30px;       /* forme ovale */
+    background: transparent;    
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* cacher l’input radio */
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+/* cercle */
+.radio-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;           
+    color: #634a37;
+    font-weight: bolder;
+    border: 2px solid #634a37;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* texte Person caché par défaut */
+.radio-text {
+    display: none;
+    color: #634a37;           
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+/* Fond ovale marron clair sur le label sélectionné */
+.radio-group label:has(input[type="radio"]:checked) {
+    background: #d1a97e;  
+}
+
+/* Cercle marron foncé au clic */
+.radio-option input[type="radio"]:checked + .radio-circle {
+    background: #634a37;        
+    color: #fff;
+}
+
+/* Afficher le texte Person en marron foncé */
+.radio-option input[type="radio"]:checked ~ .radio-text {
+    display: inline-block;
+    color: #634a37;
+    font-weight: 600;
+}

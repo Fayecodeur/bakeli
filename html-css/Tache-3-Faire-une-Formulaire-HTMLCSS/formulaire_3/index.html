@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formualaire de reservation</title>
+</head>
+
+<body>
+    <form>
+        <div class="left">
+            <img src="image.avif" alt="photo restaurant">
+        </div>
+        <div class="right">
+            <h1>Booking place for your diner!</h1>
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Your phone number" required>
+            </div>
+
+            <!-- Select Heure -->
+            <div class="form-group">
+                <label for="heure">Heure</label>
+                <select id="heure" name="heure" required>
+                    <option value="" disabled selected hidden>Time</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                </select>
+            </div>
+
+            <!-- Select Plat -->
+            <div class="form-group">
+                <label for="plat">Plat</label>
+                <select id="plat" name="plat" required>
+                    <option value="" disabled selected hidden>Food</option>
+                    <option value="plat1">Poulet</option>
+                    <option value="plat2">Boeuf</option>
+                    <option value="plat3">Végétarien</option>
+                </select>
+            </div>
+            <div class="form-group dinning-space">
+                <label class="radio-title">Select Your Dinning space</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="dinning" value="2">
+                        <span class="radio-circle">2</span>
+                        <span class="radio-text">Person</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="dinning" value="4">
+                        <span class="radio-circle">4</span>
+                        <span class="radio-text">Person</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="dinning" value="6">
+                        <span class="radio-circle">6</span>
+                        <span class="radio-text">Person</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="dinning" value="8">
+                        <span class="radio-circle">8</span>
+                        <span class="radio-text">Person</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Book now</button>
+            <p>Verify your booking into your phone</p>
+        </div>
+    </form>
+</body>
+
+</html>

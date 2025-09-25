@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de reservation</title>
+</head>
+
+<body>
+    <form>
+        <div class="right">
+            <h1>Set The Event</h1>
+            <!-- Prix  -->
+            <div class="form-group">
+                <label>Price</label>
+                <div class="static-field">$270</div>
+            </div>
+            <!-- Select Nombre -->
+            <div class="form-group">
+                <label for="nombre">People</label>
+                <select id="nombre" name="nombre" required>
+                    <option value="" disabled selected hidden>1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nom">Name</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Phone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="commentaire">Comment</label>
+                <textarea id="commentaire" name="commentaire" required></textarea>
+            </div>
+
+            <button type="submit">SEND</button>
+        </div>
+
+        <div class="left">
+            <img src="img/restau.avif" alt="image">
+            <div class="overlay-text">31st East Street, New York, NY <br> T.987 2345743 <br> T.INFO@YOURWEB.COM</div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
