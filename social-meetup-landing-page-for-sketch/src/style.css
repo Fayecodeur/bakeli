@@ -2,13 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 :root{
     --rouge : #ff5572;
     --jaune : #fce14f;
     --vert :  #00ebc9;
-    --text:   #022151;
+    --titre:   #022151;
     --hero:  #ecf3fe;
     --text:   #747d8d;
+}
+
+nav{
+    background-color: var(--hero);
+
+}
+nav .logo {
+  display: flex; 
+  align-items: center;
+}
+
+nav .logo .shap {
+  width: 30px;           
+  height: 30px;        
+  display: inline-block;
+  background-color: var(--rouge);
+}
+
+nav .logo .shap1 {        
+  border-radius: 0% 70% 0% 40%;
+  background: var(--rouge);
+  transform: rotate(-3deg);       
+}
+
+nav .logo .shap2 {        
+  border-radius: 50%;    
+  border: 8px solid var(--rouge);
+  background: transparent;   
+  margin-left: -12%;   
+}
+
+
+nav .nav-link{
+    color: var(--titre);
+    font-weight: 500;
+}
+
+nav .signup-link{
+    background-color: #00ebc9;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: var(--titre);
+}
+
+
+header{
+    height: 70vh;
+    background-color: var(--hero);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 42px;
+    color: var(--titre);
+}
+header p{
+    max-width: 600px;
+    text-align: center;
+    color: var(--text);
+}
+
+header button{
+    background-color: var(--vert);
+    padding: 15px 30px;
+    color: var(--titre);
+    font-weight: bold;
 }
