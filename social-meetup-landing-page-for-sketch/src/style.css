@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --rouge : #ff5572;
+    --jaune : #fce14f;
+    --vert :  #00ebc9;
+    --text:   #022151;
+    --hero:  #ecf3fe;
+    --text:   #747d8d;
+}
