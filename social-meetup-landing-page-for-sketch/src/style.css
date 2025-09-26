@@ -9,6 +9,7 @@
     --rouge : #ff5572;
     --jaune : #fce14f;
     --vert :  #00ebc9;
+    --vert-claire: #e1fdf9;
     --titre:   #022151;
     --hero:  #ecf3fe;
     --text:   #747d8d;
@@ -57,9 +58,8 @@ nav .signup-link{
     color: var(--titre);
 }
 
-
 header{
-    height: 70vh;
+    height: 90vh;
     background-color: var(--hero);
     display: flex;
     justify-content: center;
@@ -69,8 +69,6 @@ header{
 }
 
 header h1{
-    font-weight: bold;
-    font-size: 42px;
     color: var(--titre);
 }
 header p{
@@ -84,4 +82,16 @@ header button{
     padding: 15px 30px;
     color: var(--titre);
     font-weight: bold;
+}
+
+p{
+    color: var(--text);
+}
+
+.green-shap{
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    margin-bottom: 17px;
+    background-color: var(--vert-claire);
 }
