@@ -7,8 +7,10 @@
 
 :root{
     --rouge : #ff5572;
+    --rouge-claire: #ffc9d1;
     --jaune : #fce14f;
     --vert :  #00ebc9;
+    --bg-squeletton : #f6fcff;
     --vert-claire: #e1fdf9;
     --titre:   #022151;
     --hero:  #ecf3fe;
@@ -87,6 +89,10 @@ header button{
 p{
     color: var(--text);
 }
+h2{
+    font-weight: bold;
+    color: var(--titre)
+}
 
 .green-shap{
     height: 40px;
@@ -94,4 +100,107 @@ p{
     border-radius: 7px;
     margin-bottom: 17px;
     background-color: var(--vert-claire);
+}
+
+/* Section 2 */
+.section-2 button{
+    background: var(--vert-claire);
+    color: var(--vert);
+    padding: 7px 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.section-2 .icones span{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.icone-vert{
+    color: var(--vert);
+    background: var(--vert-claire);
+}
+.icone-rouge{
+    color: var(--rouge);
+    background: var(--rouge-claire);
+}
+
+.squeletton-notification{
+    height: auto;
+    width: 270px;
+    background: #f6fcff;
+}
+.green-cercle{
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #95f4ea;
+}
+.notification-icone{
+    font-size: 20px;
+    color: var(--rouge);
+}
+
+.white-box{
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+}
+.white-box .cercle{
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 15px;
+    background: #9bf6ea;
+}
+.white-box .trait{
+     display: block;
+    height: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background: var(--vert);
+}
+
+.small-squeletton{
+    background: #edf6ff;
+    width: 190px;
+    height: 220px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: 10;
+}
+
+
+ .small-squeletton  .cercle{
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #9bf6ea;
+}
+.small-squeletton  .trait{
+     display: block;
+    height: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background: var(--vert);
+}
+
+.small-squeletton .grey-cercle{
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #d0e4f4;
+}
+
+.small-squeletton  .grey-trait{
+     display: block;
+    height: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background: #d0e4f4;
+
 }
