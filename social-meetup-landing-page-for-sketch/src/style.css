@@ -69,6 +69,7 @@ header{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 header h1{
@@ -95,14 +96,96 @@ h2{
     color: var(--titre)
 }
 
+.shaps {
+  position: absolute;
+  top: 175px;      /* centre verticalement */
+  left: 0;       /* colle à gauche */
+}
+
+.shap {
+  width: 85px;
+  height: 85px;
+}
+
+.shap1 {
+  background: var(--rouge);
+  border-radius: 0 0 0 100%;
+}
+
+.shap2 {
+  background: var(--jaune);
+  border-radius: 0 0 0 100%;
+  transform: rotate(90deg);
+
+}
+.shap3 {
+  background: var(--rouge);
+  border-radius: 0 0 0 100%;
+}
+
+.shap4 {
+  background: var(--rouge);
+  border-radius: 0 100% 0 0;
+  margin-top: -170px;
+  margin-left: 85px;
+}
+
+ .shap-green{
+    background: var(--vert);
+    width: 85px;
+    height: 85px;
+    border-radius: 100% 0 0 0;
+    margin-left: 85px;  
+}
+
+ .shap-dark{
+   width: 85px;
+    height: 85px;
+    border-radius: 0 0 0 100%;
+    margin-left: 85px;  
+}
+.shap-dark img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 100%;
+
+}
+.shap-cercle{
+    background: var(--rouge);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-left: 170px;  
+    margin-top: -170px;
+}
+
+.shap-yellow{
+    background: var(--jaune);
+     width: 85px;
+    height: 85px;
+    border-radius: 0 0 100% 0;
+    margin-left: 170px;  
+    margin-top: 0px;
+}
+
+.shap-end{
+    background: var(--rouge);
+      width: 85px;
+    height: 85px;
+    border-radius: 0 100% 0 0;
+    margin-left: 255px;  
+    margin-top: -85px;
+}
+
+
 .green-shap{
-    height: 40px;
-    width: 40px;
+     width: 40px;
+     height: 40px;
     border-radius: 7px;
     margin-bottom: 17px;
     background-color: var(--vert-claire);
 }
-
 /* Section 2 */
 button{
     background: var(--vert-claire);
