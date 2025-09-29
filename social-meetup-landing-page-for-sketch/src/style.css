@@ -216,11 +216,19 @@ h2{
 }
 
 .shaps-right .shap6{
-    background: var(--jaune);
+    border: 10px solid var(--jaune);    
     margin-left: -85px;
     border-radius:  50%;
     margin-top: -1px;
+    background: transparent;
 }
+.shaps-right .shap6 img{
+    height: 100%;
+    width: 100%;
+    border-radius:  50%;
+  
+}
+
 
 .shaps-right .shap7{
     background: var(--rouge);
@@ -296,7 +304,25 @@ button{
     height: auto;
     width: 270px;
     background: #f6fcff;
+    position: relative;
 }
+
+.squeletton-notification .demie-cercles{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    display: flex;
+    
+}
+
+
+.squeletton-notification .demie-cercles .shap1{
+    border-radius:  100% 0 0 0;
+}
+.squeletton-notification .demie-cercles .shap2{
+    border-radius:   100% 0 0 0;
+}
+
 .green-cercle{
     display: block;
     height: 35px;
@@ -436,6 +462,10 @@ button{
     font-size: 55px;
     color: var(--vert);
 }
+
+
+
+
 .map span i{
     display: block;
     margin: 0 auto;
