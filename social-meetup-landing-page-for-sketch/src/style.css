@@ -98,8 +98,8 @@ h2{
 
 .shaps {
   position: absolute;
-  top: 175px;      /* centre verticalement */
-  left: 0;       /* colle à gauche */
+  top: 175px;  
+  left: 0;       
 }
 
 .shap {
@@ -171,13 +171,97 @@ h2{
 
 .shap-end{
     background: var(--rouge);
-      width: 85px;
+    width: 85px;
     height: 85px;
     border-radius: 0 100% 0 0;
     margin-left: 255px;  
     margin-top: -85px;
 }
 
+
+/* right */
+.shaps-right{
+    position: absolute;
+    right: 0;
+    top: 260px;
+}
+
+.shaps-right .shap1{
+    border-radius: 0 0 100% 0;
+}
+.shaps-right .shap2{
+    border-radius: 0 100% 0 0;
+    transform: rotate(360deg);
+     background: var(--rouge);
+}
+.shaps-right .shap3{
+     border-radius: 0 100% 0 0;
+     transform: rotate(90deg);
+     background: var(--vert);
+    
+}
+.shaps-right .shap4{
+    background: var(--jaune);
+     border-radius:  0 100% 0 0;
+     margin-left: -85px;
+     margin-top: -254px;
+
+}
+
+.shaps-right .shap5{
+    background: var(--vert);
+    margin-left: -85px;
+    border-radius:  0 100% 0 0;
+    transform: rotate(90deg);
+}
+
+.shaps-right .shap6{
+    background: var(--jaune);
+    margin-left: -85px;
+    border-radius:  50%;
+    margin-top: -1px;
+}
+
+.shaps-right .shap7{
+    background: var(--rouge);
+    margin-left: -170px;
+    border-radius:  0%;
+    margin-top: -254px;
+    border-radius:  100% 0 0 0;
+    
+}
+
+.shaps-right .shap8{
+    background: var(--vert);
+    margin-left: -170px;
+    border-radius:  0%;
+    border-radius:  0 100% 0  0;
+    
+}
+
+.shaps-right .shap9{
+    background: var(--rouge);
+    margin-left: -170px;
+    border-radius:  0%;
+    border-radius:  100% 0 0 0;
+    
+}
+
+
+.shaps-right .shap10{
+    background: var(--jaune);
+    margin-left: -255px;
+    margin-top: -170px;
+    border-radius:  0 100% 0 0;
+    transform: rotate(-90deg)   
+}
+.shaps-right .shap11{
+    background: var(--rouge);
+    margin-left: -255px;
+    margin-top: 0px;
+    border-radius:  0 100% 0 0;
+    transform: rotate(90deg)  
+}
 
 .green-shap{
      width: 40px;
